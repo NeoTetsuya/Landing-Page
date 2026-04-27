@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Mastery Hub | NeoTetsuya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom config for tailwind (if needed, but standard classes work great here) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-indigo-500/30">
+
+    <!-- Background Effects -->
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-indigo-900/20 blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-emerald-900/10 blur-[120px]"></div>
+    </div>
+
+    <div class="relative z-10 flex flex-col min-h-screen">
+        <!-- Navigation / Header -->
+        <header class="border-b border-slate-800/60 bg-slate-950/50 backdrop-blur-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-2 rounded-xl text-white">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-white">
+                        English<span class="text-indigo-400">Mastery</span> Hub
+                    </span>
+                </div>
+                <a href="https://github.com/NeoTetsuya" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors bg-slate-900 hover:bg-slate-800 px-4 py-2 rounded-full border border-slate-800">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>@NeoTetsuya</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="flex-grow">
+            <section class="pt-24 pb-16 px-6 max-w-7xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-6 border border-indigo-500/20">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                    </span>
+                    Open Source Learning Materials
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 mb-6">
+                    Elevate Your English
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    A curated collection of high-quality repositories focused on IELTS preparation, advanced vocabulary, and natural collocations.
+                </p>
+            </section>
+
+            <!-- Repositories Grid -->
+            <section class="px-6 pb-24 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1: Vocabulary-IELTS -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-blue-400">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="book-a" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <span class="text-xs font-medium bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Vocabulary</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Vocabulary-IELTS</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Essential vocabulary lists, definitions, and usage examples specifically curated for IELTS preparation.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">IELTS</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Lexical Resource</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Flashcards</span>
+                        </div>
+                        <a href="https://github.com/NeoTetsuya/Vocabulary-IELTS" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-white rounded-xl font-medium text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700 group-hover:border-slate-600">
+                            View Repository
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 2: Vocabulary-by-Topics -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-indigo-400">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="layers" class="w-6 h-6 text-indigo-400"></i>
+                            </div>
+                            <span class="text-xs font-medium bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Vocabulary</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Vocabulary-by-Topics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Thematic vocabulary collections designed to expand your lexicon across various real-world domains.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Thematic</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">General English</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Categorized</span>
+                        </div>
+                        <a href="https://github.com/NeoTetsuya/Vocabulary-by-Topics" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-white rounded-xl font-medium text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700 group-hover:border-slate-600">
+                            View Repository
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 3: Collocations-Intermediate -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-emerald-400">
+                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-emerald-400"></i>
+                            </div>
+                            <span class="text-xs font-medium bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Collocations</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Collocations-Intermediate</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Boost your natural fluency and sounding like a native with intermediate-level word combinations.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">B1-B2</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Fluency</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Natural English</span>
+                        </div>
+                        <a href="https://github.com/NeoTetsuya/Collocations-Intermediate" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-white rounded-xl font-medium text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700 group-hover:border-slate-600">
+                            View Repository
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 4: Collocations-Advanced -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-amber-400">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-amber-400"></i>
+                            </div>
+                            <span class="text-xs font-medium bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Collocations</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Collocations-Advanced</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Master sophisticated phrasing and advanced collocations to achieve high-band scores in speaking and writing.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">C1-C2</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">High Band</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Sophisticated</span>
+                        </div>
+                        <a href="https://github.com/NeoTetsuya/Collocations-Advanced" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-white rounded-xl font-medium text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700 group-hover:border-slate-600">
+                            View Repository
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 5: Listening-IELTS -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-rose-400">
+                        <div class="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="headphones" class="w-6 h-6 text-rose-400"></i>
+                            </div>
+                            <span class="text-xs font-medium bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Skills Practice</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Listening-IELTS</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Comprehensive practice materials, transcripts, and strategies to ace the IELTS Listening section.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">IELTS</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Audio</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Comprehension</span>
+                        </div>
+                        <a href="https://github.com/NeoTetsuya/Listening-IELTS" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-white/5 hover:bg-white/10 text-white rounded-xl font-medium text-sm transition-colors flex items-center justify-center gap-2 border border-slate-700 group-hover:border-slate-600">
+                            View Repository
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 6: Reading-IELTS (Placeholder) -->
+                    <div class="group relative flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 group-hover:border-slate-400 opacity-80 border-dashed">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-600/20 to-slate-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10"></div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/50 shadow-inner">
+                                <i data-lucide="book-open" class="w-6 h-6 text-slate-400"></i>
+                            </div>
+                            <span class="flex items-center gap-1.5 text-xs font-medium bg-slate-800 text-slate-400 px-2.5 py-1 rounded-full border border-slate-700">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                Coming Soon
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide flex items-center gap-2">Reading-IELTS</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">Curated reading passages, skimming/scanning exercises, and comprehension tests for IELTS.</p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">IELTS</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Comprehension</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded-md border border-slate-800/50">Coming Soon</span>
+                        </div>
+                        <button disabled class="w-full py-3 px-4 bg-slate-800/50 text-slate-500 rounded-xl font-medium text-sm flex items-center justify-center gap-2 cursor-not-allowed border border-slate-700/50">
+                            Under Construction
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-800/60 bg-slate-950 py-8 mt-auto">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+                <p>© 2024 NeoTetsuya. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="https://github.com/NeoTetsuya" class="hover:text-white transition-colors">GitHub Profile</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
